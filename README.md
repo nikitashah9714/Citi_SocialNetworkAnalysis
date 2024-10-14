@@ -1,18 +1,40 @@
 # Social Network Project
-Social Network of Users having friendships.
+## Problem Statement
+- Develop a social media analysis project to managing users and their friendships.
+- Create, Remove, View User.
+- Create, Remove, View Friendships between users.
+- Calculate the shortest path between two users.
+- Calculate degree centrality of users.
+- Identify communities within the social network - group of users more densely connected
 
--User entity - {userID, username, email}
+## NFRs
+- Time 120 mins.
 
--Users can be created or deleted or create friendships or delete friendships
+## Implementation
+1. User Create - with attributes userID, username, email.
+2. User Delete - delete user by UserID
+3. View User - Get User by userId
+4. View All Users - List of all Users
+5. Create Friendship - between 2 users
+6. Delete Friendship - Between 2 users
+7. View All Friends of a User by userID
+8. View all users and their friendships
+9. Calculate Cardinality of a user - count of all the friends that a user has
 
--All users/ users by userId can be viewed.
+# Solution
+## Implementation
+1. Create User Controller, Service and Repository classes.
+2. Create Friendship Controller, Service and Repository classes.
+3. Create Network Controller
+## How to Run ?
+### Pre-requisites:
+Tested with:
+- Maven
+- Java 22 
+### Steps:
+1. Clone the repository - https://github.com/nikitashah9714/Citi_SocialNetworkAnalysis
+2. Run `mvn clean install` to build the project
+3. Run `mvn exec:java` to run the project
+4. On execution, it will start the application on port 8001
 
--All Friendships or Friendships of a particular user can be viewed.
-
-##Shortest Path between 2 users needs to be calculated - it is the number of hops
-between 2 users
-
-##Identify Communities - group of users more densely connected
-
-##Calculate the degree centrality - total number of direct friends of a user
 
